@@ -20,8 +20,26 @@
 
     body {
       background: none;
-    }
       
+    }
+    
+    #sectionOverview {
+       height: 100%; 
+       position: absolute;
+       width: 100%;
+       text-align: center;
+    }
+  
+    #emptylist{
+      height: 100%;
+      width: 100%;
+      display: block;
+      border: 1px solid black;
+      position: absolute;
+      vertical-align: middle;
+    }  
+      
+
     </style>
 
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
@@ -40,8 +58,11 @@
     <h1>Reminders</h1>
   </header>
   </section>
-  <section id="download-list-empty">
-    <span id="dle-text" data-l10n-id="no-downloads">No reminders</span>
+  <section id="sectionOverview">
+<span id="dle-vertical"></span>
+    
+      <span id="dle-text" data-l10n-id="no-downloads">No reminders     </span>
+    
   </section>
 
 <section id="downloadList" data-type="list">
